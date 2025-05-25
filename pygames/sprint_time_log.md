@@ -1,6 +1,6 @@
 # CSE 310 - Sprint Time Log
 
-Name: [Your Name]
+Name: Jonathan Cardiel
 
 Sprint #: 2
 
