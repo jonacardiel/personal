@@ -255,6 +255,64 @@ void loadStudentsFromFile(const std::string& filename) {
     std::cout << "Student data loaded from " << filename << std::endl;
 }
 
+// Function to edit or update a specific grade for a student.
+void editGrade() {
+    int id;
+    std::cout << "\n--- Edit Student Grade ---" << std::endl;
+    std::cout << "Enter student ID: ";
+    while (!(std::cin >> id)) {
+        std::cout << "Invalid ID. Please enter a number: ";
+        std::cin.clear();
+        clearInputBuffer();
+    }
+
+    Student* foundStudent = nullptr;
+    for (Student& s : students) {
+        if (s.id == id) {
+            foundStudent = &s;
+            break;
+        }
+    }
+
+    if (!foundStudent) {
+        std::cout << "Student with ID " << id << " not found." << std::endl;
+        clearInputBuffer();
+        return;
+    }
+
+    if (foundStudent->grades.empty()) {
+        std::cout << "No grades to edit for this student." << std::endl;
+        clearInputBuffer();
+        return;
+    }
+
+    std::cout << "Grades for " << foundStudent->name << ": ";
+    for (size_t i = 0; i < foundStudent->grades.size(); ++i) {
+        std::cout << "[" << i << "] " << foundStudent->grades[i];
+        if (i < foundStudent->grades.size() - 1) std::cout << ", ";
+    }
+    std::cout << std::endl;
+
+    size_t gradeIndex;
+    std::cout << "Enter the index of the grade to edit (0-" << foundStudent->grades.size() - 1 << "): ";
+    while (!(std::cin >> gradeIndex) || gradeIndex >= foundStudent->grades.size()) {
+        std::cout << "Invalid index. Please enter a valid grade index: ";
+        std::cin.clear();
+        clearInputBuffer();
+    }
+
+    double newGrade;
+    std::cout << "Enter new grade (0-100): ";
+    while (!(std::cin >> newGrade) || newGrade < 0 || newGrade > 100) {
+        std::cout << "Invalid grade. Please enter a number between 0 and 100: ";
+        std::cin.clear();
+        clearInputBuffer();
+    }
+
+    foundStudent->grades[gradeIndex] = newGrade;
+    std::cout << "Grade updated successfully." << std::endl;
+    clearInputBuffer();
+}
 
 // --- Main Program Loop ---
 // The entry point of the program.
@@ -279,12 +337,13 @@ int main() {
         std::cout << "3. List All Students" << std::endl;
         std::cout << "4. Save Data to File" << std::endl;
         std::cout << "5. Load Data from File" << std::endl;
-        std::cout << "6. Exit" << std::endl;
+        std::cout << "6. Edit Student Grade" << std::endl;
+        std::cout << "7. Exit" << std::endl;
         std::cout << "Enter your choice: ";
 
         // Conditional and Loop: Input validation for menu option
-        while (!(std::cin >> option) || option < 1 || option > 6) {
-            std::cout << "Invalid option. Please enter a number between 1 and 6: ";
+        while (!(std::cin >> option) || option < 1 || option > 7) {
+            std::cout << "Invalid option. Please enter a number between 1 and 7: ";
             std::cin.clear();
             clearInputBuffer();
         }
@@ -307,6 +366,9 @@ int main() {
                 loadStudentsFromFile(filename);
                 break;
             case 6:
+                editGrade();
+                break;
+            case 7:
                 std::cout << "Exiting program. Goodbye!" << std::endl;
                 break;
             default:
@@ -314,7 +376,7 @@ int main() {
                 std::cout << "An unexpected error occurred." << std::endl;
                 break;
         }
-    } while (option != 6); // Loop condition: Continue until option 6 is chosen
+    } while (option != 7); // Loop condition: Continue until option 7 is chosen
 
     return 0; // Indicate successful program execution
 }
