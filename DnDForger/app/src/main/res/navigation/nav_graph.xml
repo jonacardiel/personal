@@ -1,0 +1,48 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterListFragment">
+
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.example.dndcharactermaker.ui.characterlist.CharacterListFragment"
+        android:label="My Characters"
+        tools:layout="@layout/fragment_character_list">
+        <action
+            android:id="@+id/action_characterListFragment_to_creationFlow"
+            app:destination="@id/creation_nav_graph" />
+        <action
+            android:id="@+id/action_characterListFragment_to_characterSheetFragment"
+            app:destination="@id/characterSheetFragment" />
+    </fragment>
+
+    <!-- Nested graph for the creation flow -->
+    <navigation android:id="@+id/creation_nav_graph"
+        app:startDestination="@id/raceSelectionFragment">
+        <fragment
+            android:id="@+id/raceSelectionFragment"
+            android:name="com.example.dndcharactermaker.ui.creation.RaceSelectionFragment"
+            android:label="Select Race">
+            <action
+                android:id="@+id/action_raceSelectionFragment_to_classSelectionFragment"
+                app:destination="@id/classSelectionFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/classSelectionFragment"
+            android:name="com.example.dndcharactermaker.ui.creation.ClassSelectionFragment"
+            android:label="Select Class">
+            <!-- Add action to next step (e.g., ability scores) -->
+        </fragment>
+        <!-- ... other creation fragments -->
+    </navigation>
+
+    <fragment
+        android:id="@+id/characterSheetFragment"
+        android:name="com.example.dndcharactermaker.ui.sheet.CharacterSheetFragment"
+        android:label="Character Sheet">
+        <argument
+            android:name="characterId"
+            app:argType="long" />
+    </fragment>
+</navigation>
