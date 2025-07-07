@@ -149,9 +149,10 @@ namespace SimpleBankingCore.App
                         Console.ResetColor();
                     }
                 }
-                Console.WriteLine("\nPress any key to continue...");
-                Console.ReadKey();
+                Console.WriteLine("\nPress Enter to continue...");
+                Console.ReadLine();
             }
+        
         }
 
         #region Menu Handlers

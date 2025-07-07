@@ -6238,19 +6238,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NoBinario\\.nuget\\packages\\": {}
+    "C:\\Users\\jefek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.App\\SimpleBankingCore.App.csproj",
+      "projectUniqueName": "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.App\\SimpleBankingCore.App.csproj",
       "projectName": "SimpleBankingCore.App",
-      "projectPath": "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.App\\SimpleBankingCore.App.csproj",
-      "packagesPath": "C:\\Users\\NoBinario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.App\\obj\\",
+      "projectPath": "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.App\\SimpleBankingCore.App.csproj",
+      "packagesPath": "C:\\Users\\jefek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NoBinario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jefek\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -6262,11 +6262,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Data\\SimpleBankingCore.Data.csproj": {
-              "projectPath": "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Data\\SimpleBankingCore.Data.csproj"
+            "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Data\\SimpleBankingCore.Data.csproj": {
+              "projectPath": "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Data\\SimpleBankingCore.Data.csproj"
             },
-            "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Services\\SimpleBankingCore.Services.csproj": {
-              "projectPath": "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Services\\SimpleBankingCore.Services.csproj"
+            "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Services\\SimpleBankingCore.Services.csproj": {
+              "projectPath": "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Services\\SimpleBankingCore.Services.csproj"
             }
           }
         }
@@ -6280,8 +6280,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -6340,7 +6339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

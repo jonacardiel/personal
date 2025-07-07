@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\NoBinario\\.nuget\\packages\\": {}
+    "C:\\Users\\jefek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Core\\SimpleBankingCore.Core.csproj",
+      "projectUniqueName": "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Core\\SimpleBankingCore.Core.csproj",
       "projectName": "SimpleBankingCore.Core",
-      "projectPath": "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Core\\SimpleBankingCore.Core.csproj",
-      "packagesPath": "C:\\Users\\NoBinario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NoBinario\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Core\\obj\\",
+      "projectPath": "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Core\\SimpleBankingCore.Core.csproj",
+      "packagesPath": "C:\\Users\\jefek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jefek\\OneDrive\\Documents\\personal\\SimpleBankingCore\\SimpleBankingCore.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NoBinario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jefek\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -43,8 +43,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -65,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

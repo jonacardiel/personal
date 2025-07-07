@@ -1543,7 +1543,7 @@
       "SimpleBankingCore.Core/1.0.0": {
         "runtime": {
           "SimpleBankingCore.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1557,7 +1557,7 @@
         },
         "runtime": {
           "SimpleBankingCore.Data.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1571,7 +1571,7 @@
         },
         "runtime": {
           "SimpleBankingCore.Services.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
