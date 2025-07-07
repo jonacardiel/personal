@@ -206,3 +206,4 @@ C:\Users\NoBinario\Documents\personal\SimpleBankingCore\SimpleBankingCore.App\ob
 C:\Users\NoBinario\Documents\personal\SimpleBankingCore\SimpleBankingCore.App\obj\Debug\net8.0\SimpleBankingCore.App.pdb
 C:\Users\NoBinario\Documents\personal\SimpleBankingCore\SimpleBankingCore.App\obj\Debug\net8.0\SimpleBankingCore.App.genruntimeconfig.cache
 C:\Users\NoBinario\Documents\personal\SimpleBankingCore\SimpleBankingCore.App\obj\Debug\net8.0\ref\SimpleBankingCore.App.dll
+C:\Users\NoBinario\Documents\personal\SimpleBankingCore\SimpleBankingCore.App\bin\Debug\net8.0\appsettings.json

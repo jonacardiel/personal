@@ -55,6 +55,7 @@ namespace SimpleBankingCore.App
                 })
                 .ConfigureServices((hostContext, services) =>
                 {
+                    
                     services.AddDbContext<BankingDbContext>(options =>
                         options.UseSqlite(hostContext.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -62,6 +63,7 @@ namespace SimpleBankingCore.App
                     services.AddScoped<ICustomerService, CustomerService>();
                     services.AddScoped<IAccountService, AccountService>();
                     services.AddScoped<ITransactionService, TransactionService>();
+                    services.AddScoped<CustomerRepository>();
 
                     services.AddLogging(configure => configure.AddConsole());
                 });
